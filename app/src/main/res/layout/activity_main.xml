@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.MainActivity"
+    android:gravity="center"
+    android:background="#FBFAFA"
+    android:id="@+id/mainContent">
+
+    <TextView
+        android:id="@+id/response"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_above="@+id/et_input"
+        android:layout_marginBottom="40dp"
+        android:textAlignment="center"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Your Phone"
+        android:layout_margin="20dp"
+        android:background="@drawable/inputs"
+        android:textAlignment="center"
+         />
+    <Button
+        android:id="@+id/validation_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Validation"
+        android:textSize="20sp"
+        android:layout_below="@+id/et_input"
+        android:layout_margin="20dp"
+        android:background="@drawable/buttons"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/history_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:layout_below="@id/validation_btn"
+        android:textSize="20sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/buttons"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>
